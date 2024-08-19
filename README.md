@@ -74,6 +74,7 @@ The XGBoost algorithm was chosen for its performance and efficiency in handling 
 ## Model Evaluation
 
 The best model was evaluated on the test set using classification metrics like precision, recall, and F1-score. A confusion matrix was also generated to visualize the model’s performance.
+The final XGBoost model achieved an F1-score of 0.78 and an accuracy of 85% on the test set, demonstrating the effectiveness of the preprocessing and model tuning steps.
 
 ## Skills Demonstrated
 
