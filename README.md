@@ -71,30 +71,6 @@ The dataset was highly imbalanced, with significantly more instances of certain 
 
 The XGBoost algorithm was chosen for its performance and efficiency in handling classification tasks. Hyperparameter tuning was performed using GridSearchCV to find the best model parameters. The model was trained using the resampled training data and evaluated on the test set.
 
-```python
-param_grid = {
-    'learning_rate': [0.01, 0.1, 0.2],
-    'n_estimators': [100, 200, 300],
-    'max_depth': [3, 4, 5],
-    'subsample': [0.8, 0.9, 1.0],
-    'colsample_bytree': [0.8, 0.9, 1.0]
-}
-
-# Initialize the XGBoost model
-xgb_model = xgb.XGBClassifier(use_label_encoder=False, eval_metric='mlogloss')
-
-# Grid Search
-grid_search_xgb = GridSearchCV(
-    estimator=xgb_model,
-    param_grid=param_grid,
-    cv=5,
-    n_jobs=-1,
-    verbose=2,
-    scoring='f1_macro'
-)
-
-grid_search_xgb.fit(X_train_resampled, y_train_resampled)
-
 ## Model Evaluation
 
 The best model was evaluated on the test set using classification metrics like precision, recall, and F1-score. A confusion matrix was also generated to visualize the model’s performance.
