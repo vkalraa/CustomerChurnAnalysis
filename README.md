@@ -94,3 +94,16 @@ grid_search_xgb = GridSearchCV(
 )
 
 grid_search_xgb.fit(X_train_resampled, y_train_resampled)
+
+## Model Evaluation
+
+The best model was evaluated on the test set using classification metrics like precision, recall, and F1-score. A confusion matrix was also generated to visualize the model’s performance.
+
+## Skills Demonstrated
+
+Python, Data Preprocessing, Feature Engineering, Anomaly Detection, Imbalanced Data Handling, SMOTETomek, XGBoost, GridSearchCV, Classification Metrics, Data Visualization
+
+## Conclusion
+
+The project successfully implemented a predictive model for customer churn using advanced data preprocessing techniques and machine learning. The XGBoost model, optimized through hyperparameter tuning, provided a robust solution for handling imbalanced data and achieving a high F1-score.
+
