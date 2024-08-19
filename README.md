@@ -19,7 +19,6 @@ This project is focused on analyzing customer churn data using various machine l
 6. [Model Evaluation](#model-evaluation)
 7. [Skills Demonstrated](#skills-demonstrated)
 8. [Conclusion](#conclusion)
-9. [License](#license)
 
 ## Introduction
 
@@ -37,12 +36,7 @@ To run this project, follow these steps:
     ```bash
     git clone https://github.com/yourusername/customer-churn-analysis.git
     ```
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Launch the Jupyter Notebook:
+2. Launch the Jupyter Notebook:
     ```bash
     jupyter notebook
     ```
